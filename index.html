@@ -3,19 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First GitHub Pages Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>John Smith - Data Analyst Portfolio</title>
+    <meta name="description" content="John Smith is a data analyst specializing in financial markets. Explore his portfolio of data-driven projects.">
+    <link rel="canonical" href="https://yourdomain.com/"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
+
     <main>
-        <p>This is my first static website hosted on GitHub Pages.</p>
+        <section id="hero">
+            <h1>John Smith</h1>
+            <p>Data Analyst - Financial Markets</p>
+            <p>Turning Market Complexity into Clarity</p>
+            <a href="#portfolio" class="cta-button">Explore Portfolio</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="john-smith.jpg" alt="John Smith" width="150" height="150">
+            <p>John Smith is a data analyst specializing in...</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Brief description...</p>
+                    <a href="#" class="view-project-button">View Project</a>
+                </article>
+                <article class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Brief description...</p>
+                    <a href="#" class="view-project-button">View Project</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>Created by Your Name</p>
+        <p>&copy; 2025 John Smith. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
